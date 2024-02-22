@@ -28,7 +28,7 @@ export function createAuthenticator(context: AppLoadContext) {
       clientSecret: context.env.GITHUB_SECRET,
       callbackURL:
         context.env.ENV === "production"
-          ? "https://app.co/auth/github/callback"
+          ? "https://jumpstart.spiess.dev/auth/github/callback"
           : "http://localhost:5173/auth/github/callback",
       scope: gitHubScope,
     },
@@ -115,7 +115,7 @@ export async function requireUser(
   throw redirect("/joined", 302)
 }
 
-export function isAllowed(user: User) {
+export function isAllowed(user: Pick<User, "ghUsername">) {
   switch (user.ghUsername) {
     case "philipp-spiess":
       return true

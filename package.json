@@ -1,17 +1,25 @@
 {
+  "name": "jumpstart",
   "private": true,
   "sideEffects": false,
   "type": "module",
+  "author": "Philipp Spiess <philipp@spiess.dev>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/philippspiess/jumpstart"
+  },
   "scripts": {
-    "dev": "remix vite:dev",
     "build": "remix vite:build",
-    "start": "wrangler pages dev ./build/client",
-    "deploy": "wrangler pages deploy ./build/client --project-name=jumpstart",
-    "typecheck": "tsc",
     "check": "pnpm typecheck && biome check .",
-    "format": "biome check --apply .",
     "db:generate": "drizzle-kit generate:sqlite",
-    "db:migrate": "pnpm wrangler d1 migrations apply jumpstart --local"
+    "db:migrate": "pnpm wrangler d1 migrations apply jumpstart --local",
+    "deploy": "wrangler pages deploy ./build/client --project-name=jumpstart",
+    "dev": "remix vite:dev",
+    "format": "biome check --apply .",
+    "start": "wrangler pages dev ./build/client",
+    "test": "vitest",
+    "typecheck": "tsc"
   },
   "dependencies": {
     "@remix-run/cloudflare": "^2.7.2",

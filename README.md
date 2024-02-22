@@ -68,4 +68,5 @@ This project is set up continuously to deploy to [Cloudflare Pages](https://page
     - `wrangler.toml` (the `name` and `d1_databases` bindings)
     - `.github/workflows/ci.yml` (in the migration step)
     - `package.json` (in the `deploy` and `db:migrate` scripts)
+1. Change the production URL of the project in `app/.server.auth`.
 1. Configure environment variables in Cloudflare Pages (check the `.dev.vars` file for the required variables). This can be done from the [Cloudflare UI](https://dash.cloudflare.com/).
