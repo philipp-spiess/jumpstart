@@ -26,6 +26,7 @@ Here are some features that I want to add in the future. Create an issue if you 
 - [ ] Emails and background/scheduled workers
 - [ ] Admin panel
 - [ ] Marketing tools (Blog, Docs)
+- [ ] Blob handling via Cloudflare R2
 
 ## Learn more
 
