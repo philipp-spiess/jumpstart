@@ -4,14 +4,14 @@
 
 ## What's included
 
-- 🧱 App framework: [Remix](https://remix.run), [Vite](https://vitejs.dev) and [React](https://reactjs.org)
-- 🪲 Linting and Typechecking: [TypeScript](https://www.typescriptlang.org) and [Biome](https://biomejs.dev/)
-- 🔬 Testing: [Vitest](https://vitest.dev) and [React Testing Library](https://testing-library.com)
-- 🗄️ ORM: [Drizzle](https://orm.drizzle.team/) on [Cloudflare D1](https://developers.cloudflare.com/d1)
-- 🎨 UI and Styling: [Tailwind](https://tailwindcss.com), [shadecn/ui](https://ui.shadcn.com), and [Taxonomy](https://tx.shadcn.com/).
-- 🔒 Authentication: [remix-auth](https://github.com/sergiodxa/remix-auth) and [remix-auth-github](https://github.com/sergiodxa/remix-auth-github)
-- 🌩️ Deployment: [Cloudflare Pages](https://pages.cloudflare.com)
-- 🔄 CI/CD: [Github Actions](https://github.com/features/actions)
+- **🧱 App framework:** [Remix](https://remix.run), [Vite](https://vitejs.dev) and [React](https://reactjs.org)
+- **🪲 Linting and Typechecking**: [TypeScript](https://www.typescriptlang.org) and [Biome](https://biomejs.dev/)
+- **🔬 Testing**: [Vitest](https://vitest.dev) and [React Testing Library](https://testing-library.com)
+- **🗄️ ORM**: [Drizzle](https://orm.drizzle.team/) on [Cloudflare D1](https://developers.cloudflare.com/d1)
+- **🎨 UI and Styling**: [Tailwind](https://tailwindcss.com), [shadecn/ui](https://ui.shadcn.com), and [Taxonomy](https://tx.shadcn.com/).
+- **🔒 Authentication**: [remix-auth](https://github.com/sergiodxa/remix-auth) and [remix-auth-github](https://github.com/sergiodxa/remix-auth-github)
+- **🌩️ Deployment**: [Cloudflare Pages](https://pages.cloudflare.com)
+- **🔄 CI/CD**: [Github Actions](https://github.com/features/actions)
 
 ## What's coming?
 
