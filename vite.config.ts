@@ -23,7 +23,7 @@ export default defineConfig({
           GITHUB_SECRET: string
           ENV: "production" | "development"
         }>({ persist: true })
-        const db = drizzle(proxy.env.DB as D1Database, { schema })
+        const db = drizzle(proxy.env.DB, { schema })
 
         return {
           db,
