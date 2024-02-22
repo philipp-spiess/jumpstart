@@ -3,11 +3,11 @@ import {
   createCookieSessionStorage,
   redirect,
 } from "@remix-run/cloudflare"
-import { Authenticator } from "remix-auth"
 import { eq } from "drizzle-orm"
-import { githubUserDetailsForToken } from "./github"
+import { Authenticator } from "remix-auth"
 import { type GitHubScope, GitHubStrategy } from "remix-auth-github"
-import { type NewUser, type User, users, SafeUser } from "../db.server/schema"
+import { type NewUser, SafeUser, type User, users } from "../db.server/schema"
+import { githubUserDetailsForToken } from "./github"
 
 export function createAuthenticator(context: AppLoadContext) {
   const sessionStorage = createCookieSessionStorage({

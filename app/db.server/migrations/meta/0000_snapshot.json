@@ -61,16 +61,12 @@
       "indexes": {
         "email_idx": {
           "name": "email_idx",
-          "columns": [
-            "email"
-          ],
+          "columns": ["email"],
           "isUnique": true
         },
         "gh_access_token_idx": {
           "name": "gh_access_token_idx",
-          "columns": [
-            "gh_access_token"
-          ],
+          "columns": ["gh_access_token"],
           "isUnique": false
         }
       },

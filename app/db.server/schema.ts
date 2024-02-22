@@ -1,11 +1,11 @@
 import type { InferInsertModel, InferSelectModel } from "drizzle-orm"
 import {
+  BaseSQLiteDatabase,
   index,
+  integer,
   sqliteTable,
   text,
-  integer,
   uniqueIndex,
-  BaseSQLiteDatabase,
 } from "drizzle-orm/sqlite-core"
 
 export const users = sqliteTable(

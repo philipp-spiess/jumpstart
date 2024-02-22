@@ -2,10 +2,10 @@ import { useNavigation } from "@remix-run/react"
 import { type PropsWithChildren, useEffect, useState } from "react"
 import { serverOnly$ } from "vite-env-only"
 
-import LoadingSpinner from "./LoadingSpinner"
 import { LoaderFunctionArgs } from "@remix-run/cloudflare"
 import { requireUser } from "~/.server/auth"
 import { SafeUser } from "~/db.server/schema"
+import LoadingSpinner from "./LoadingSpinner"
 import UserMenu from "./UserMenu"
 
 export const navLoader = serverOnly$(

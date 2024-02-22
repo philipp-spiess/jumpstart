@@ -1,9 +1,9 @@
 interface Props {
-  size?: "xs" | "sm";
+  size?: "xs" | "sm"
 }
 export default function LoadingSpinner(props: Props) {
-  const size = props.size || "sm";
-  const sizeClassName = size === "xs" ? "w-4 h-4" : "w-6 h-6";
+  const size = props.size || "sm"
+  const sizeClassName = size === "xs" ? "w-4 h-4" : "w-6 h-6"
   return (
     <div role="status" className="flex items-center justify-center">
       <svg
@@ -24,5 +24,5 @@ export default function LoadingSpinner(props: Props) {
       </svg>
       <span className="sr-only">Loading...</span>
     </div>
-  );
+  )
 }

@@ -6,9 +6,9 @@ export async function githubUserDetailsForToken(token: string) {
       },
     })
   ).json()) as {
-    login: string;
-    email: string;
-    avatar_url: string | undefined;
-    name: string;
-  };
+    login: string
+    email: string
+    avatar_url: string | undefined
+    name: string
+  }
 }
