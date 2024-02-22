@@ -32,6 +32,18 @@ Here are some features that I want to add in the future. Create an issue if you 
 
 📖 See the [Remix docs](https://remix.run/docs) and the [Remix Vite docs](https://remix.run/docs/en/main/future/vite) for details on supported features.
 
+## First steps
+
+Before you start development, you'll need to install the dependencies and configure the local development environment. For managing the `node` and `pnpm` versions, we recommend using [mise](https://mise.jdx.dev/).
+
+```bash
+pnpm install
+cp .dev.vars.sample .dev.vars
+pnpm db:migrate
+```
+
+If you wish to use GitHub authentication, you'll need to [create a new GitHub application[https://github.com/settings/developers]. Steps for this can be found in the example `.dev.vars` config.
+
 ## Development
 
 ```bash
@@ -56,4 +68,4 @@ This project is set up continuously to deploy to [Cloudflare Pages](https://page
     - `wrangler.toml` (the `name` and `d1_databases` bindings)
     - `.github/workflows/ci.yml` (in the migration step)
     - `package.json` (in the `deploy` and `db:migrate` scripts)
-
+1. Configure environment variables in Cloudflare Pages (check the `.dev.vars` file for the required variables). This can be done from the [Cloudflare UI](https://dash.cloudflare.com/).
