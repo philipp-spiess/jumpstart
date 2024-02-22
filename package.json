@@ -6,11 +6,12 @@
     "dev": "remix vite:dev",
     "build": "remix vite:build",
     "start": "wrangler pages dev ./build/client",
-    "deploy": "wrangler pages deploy ./build/client --project-name=myapp",
+    "deploy": "wrangler pages deploy ./build/client --project-name=jumpstart",
     "typecheck": "tsc",
+    "check": "pnpm typecheck && biome check .",
     "format": "biome check --apply .",
     "db:generate": "drizzle-kit generate:sqlite",
-    "db:migrate": "pnpm wrangler d1 migrations apply db --local"
+    "db:migrate": "pnpm wrangler d1 migrations apply jumpstart --local"
   },
   "dependencies": {
     "@remix-run/cloudflare": "^2.7.2",

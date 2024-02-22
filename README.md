@@ -40,14 +40,20 @@ pnpm run dev
 
 ## Deployment
 
-First, build your app for production:
+This project is set up continuously to deploy to [Cloudflare Pages](https://pages.cloudflare.com). For your first deployment, you'll need to set up a new project in Cloudflare Pages.
 
-```bash
-pnpm run build
-```
+1. Create a new project via Wrangler
 
-Then run the app in production mode:
+   ```bash
+   pnpm wrangler pages project create <PROJECT_NAME>
+   ```
+1. Create a new DB via [Cloudflare D1](https://developers.cloudflare.com/d1)
 
-```bash
-pnpm start
-```
+   ```bash
+   pnpm wrangler d1 create <PROJECT_NAME>
+   ```
+1. Change the name of the project from `jumpstart` to your `<PROJECT_NAME>` in the following files:
+    - `wrangler.toml` (the `name` and `d1_databases` bindings)
+    - `.github/workflows/ci.yml` (in the migration step)
+    - `package.json` (in the `deploy` and `db:migrate` scripts)
+
