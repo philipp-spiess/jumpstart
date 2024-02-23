@@ -70,3 +70,10 @@ This project is set up continuously to deploy to [Cloudflare Pages](https://page
     - `package.json` (in the `deploy` and `db:migrate` scripts)
 1. Change the production URL of the project in `app/.server.auth`.
 1. Configure environment variables in Cloudflare Pages (check the `.dev.vars` file for the required variables). This can be done from the [Cloudflare UI](https://dash.cloudflare.com/).
+
+## Setting up GitHub Actions
+
+1. [Create a Cloudflare access token](https://dash.cloudflare.com/profile/api-tokens/) with the `Edit Cloudflare Workers` preset.
+
+   ⚠️ **Important:** Make sure to additionally add `D1` edit permissions, otherwise automated database migrations will fail.
+1. In GitHub, go to `Settings > Secrets and variables > Actions` and add a new environment _secret_ with the `CLOUDFLARE_API_TOKEN` name and the token created in the previous step.

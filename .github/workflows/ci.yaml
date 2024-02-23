@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # The pnpm GitHub action does not support reading the version from
       # .tool-versions yet so we have to be creative.
@@ -24,12 +24,12 @@ jobs:
         id: versions
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v3
         with:
           version: ${{ steps.versions.outputs.pnpm}}
 
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version-file: .tool-versions
           cache: "pnpm"
@@ -56,7 +56,7 @@ jobs:
     if: ${{ github.ref == 'refs/heads/main' && github.event_name == 'push' }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # The pnpm GitHub action does not support reading the version from
       # .tool-versions yet so we have to be creative.
@@ -65,12 +65,12 @@ jobs:
         id: versions
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v3
         with:
           version: ${{ steps.versions.outputs.pnpm}}
 
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version-file: .tool-versions
           cache: "pnpm"
