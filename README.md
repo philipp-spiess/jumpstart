@@ -2,6 +2,12 @@
 
 🔋 Jumpstart is batteries-included Remix starter kit by [Philipp Spiess](https://spiess.dev).
 
+## Getting started
+
+```bash
+npx create-remix@latest --template philipp-spiess/jumpstart
+```
+
 ## What's included
 
 - **🧱 App framework:** [Remix](https://remix.run), [Vite](https://vitejs.dev) and [React](https://reactjs.org)
