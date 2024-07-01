@@ -39,7 +39,7 @@ Here are some features that I want to add in the future. Create an issue if you 
 
 ## First steps
 
-Before you start development, you'll need to install the dependencies and configure the local development environment. For managing the `node` and `pnpm` versions, we recommend using [mise](https://mise.jdx.dev/).
+Before you start development, you'll need to install the dependencies and configure the local development environment. For managing the `node` and `pnpm` versions, we recommend using [mise](https://mise.jdx.dev).
 
 ```bash
 pnpm install
